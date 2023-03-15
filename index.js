@@ -8,7 +8,7 @@ app.use(express.json())
 app.listen(8000)
 mongoose.connect("mongodb+srv://popymern2201:popymern2201@cluster0.lpg1xbw.mongodb.net/?retryWrites=true&w=majority")
 
-app.get('/', function(req,res){
+app.post('/', function(req,res){
     
     // let {name, email , password } = req.body
     // let user = new User({
@@ -17,6 +17,6 @@ app.get('/', function(req,res){
     //     password:password 
     // })
     // user.save()
-    // res.send(user)
+    res.send('hello')
     console.log('hello')
 })
