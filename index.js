@@ -10,13 +10,13 @@ mongoose.connect("mongodb+srv://popymern2201:popymern2201@cluster0.lpg1xbw.mongo
 
 app.get('/', function(req,res){
     
-    let {name, email , password } = req.body
-    let user = new User({
-        name:name,
-        email:email,
-        password:password 
-    })
-    user.save()
-    res.send(user)
-    console.log(user)
+    // let {name, email , password } = req.body
+    // let user = new User({
+    //     name:name,
+    //     email:email,
+    //     password:password 
+    // })
+    // user.save()
+    // res.send(user)
+    console.log('hello')
 })
