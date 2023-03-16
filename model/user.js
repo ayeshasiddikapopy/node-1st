@@ -14,5 +14,9 @@ let userSchema = new Schema ({
     code:{
         type:String
     },
+    varified:{
+        type:Boolean,
+        default:false
+    }
 })
 module.exports = mongoose.model("User" , userSchema)
